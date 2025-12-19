@@ -34,7 +34,9 @@ export const fetchRideCategories = async ({
 };
 
 export const updateCategory = async ({ id }: { id: string }) => {
-  const { data } = await apiClient.patch(`${BASE_URL}/ride-categories/${id}`);
+  const { data } = await apiClient.patch(
+    `https://trygg.staging.nga.gm/api/v1/rides/categories/${id}`
+  );
   return data;
 };
 
