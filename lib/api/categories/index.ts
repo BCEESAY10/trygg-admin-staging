@@ -25,7 +25,7 @@ export const fetchRideCategories = async ({
   preferredLanguage,
 }: CategoryFilters): Promise<RideCategoryResponse> => {
   const { data } = await apiClient.get<RideCategoryResponse>(
-    'https://api.trygg.nga.gm/api/v1/rides/categories',
+    'http://trygg.staging.nga.gm/api/v1/rides/categories',
     {
       params: { page, limit, q: searchTerm, preferredLanguage },
     }
@@ -34,7 +34,7 @@ export const fetchRideCategories = async ({
 };
 
 export const updateCategory = async ({ id }: { id: string }) => {
-  const { data } = await apiClient.put(`${BASE_URL}/ride-categories/${id}`);
+  const { data } = await apiClient.patch(`${BASE_URL}/ride-categories/${id}`);
   return data;
 };
 

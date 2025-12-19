@@ -1,1 +1,1 @@
-export const BASE_URL = 'https://api.trygg.nga.gm/api/v1/admin';
+export const BASE_URL = 'http://trygg.staging.nga.gm/api/v1/admin';

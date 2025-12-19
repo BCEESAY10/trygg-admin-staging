@@ -45,6 +45,7 @@
         "approve": "Approve",
         "reject": "Reject",
         "submit": "Submit",
+        "save": "Save",
         "cancel": "Cancel"
     },
     "modal": {

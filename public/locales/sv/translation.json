@@ -45,6 +45,7 @@
         "approve": "Godkänn",
         "reject": "Avvisa",
         "submit": "Skicka",
+         "save": "Spara",
         "cancel": "Avbryt"
     },
     "modal": {

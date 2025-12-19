@@ -130,13 +130,13 @@ const CategoryUpdateDropdown = ({
             onClick={handleClose}
             className={`${styles.menu__item} ${styles.cancel__button}`}
           >
-            {t('common.cancel')}
+            {t('actions.cancel')}
           </button>
           <button
             type="submit"
             className={`${styles.menu__item} ${styles.save__button}`}
           >
-            {t('common.save')}
+            {t('actions.save')}
           </button>
         </div>
       </form>
