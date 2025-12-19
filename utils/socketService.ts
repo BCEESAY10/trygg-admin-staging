@@ -15,7 +15,7 @@ class AdminSocketService {
 
   connect(): Promise<void> {
     return new Promise((resolve, reject) => {
-      this.socket = io('https://api.trygg.nga.gm/', {
+      this.socket = io('https://trygg.staging.nga.gm/', {
         auth: { token: this.token },
         transports: ['websocket', 'polling'],
         timeout: 10000,
