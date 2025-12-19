@@ -25,7 +25,7 @@ export const fetchRideCategories = async ({
   preferredLanguage,
 }: CategoryFilters): Promise<RideCategoryResponse> => {
   const { data } = await apiClient.get<RideCategoryResponse>(
-    'http://trygg.staging.nga.gm/api/v1/rides/categories',
+    'https://trygg.staging.nga.gm/api/v1/rides/categories',
     {
       params: { page, limit, q: searchTerm, preferredLanguage },
     }
