@@ -1,0 +1,247 @@
+.error_container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.error_card {
+  max_width: 42rem;
+  width: 100%;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.error_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.error-_number_container {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.error_number {
+  font-size: 12rem;
+  color: rgba(30, 58, 138, 0.1);
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.error_text_overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error_message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.error_title {
+  font-size: 1.5rem;
+  color: #ddb637;
+  font-weight: bold;
+  margin: 0;
+}
+
+.error_description {
+  color: #6b7280;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.decorative_container {
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  margin: 2rem 0;
+}
+
+.decorative_circle {
+  position: absolute;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.circle-1 {
+  width: 6rem;
+  height: 6rem;
+  background-color: rgba(59, 130, 246, 0.05);
+  top: 0;
+  left: 25%;
+}
+
+.circle-2 {
+  width: 8rem;
+  height: 8rem;
+  background-color: rgba(59, 130, 246, 0.1);
+  bottom: 0;
+  right: 25%;
+  animation-delay: 0.15s;
+}
+
+.circle-3 {
+  width: 4rem;
+  height: 4rem;
+  background-color: rgba(59, 130, 246, 0.15);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 0.3s;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.button_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 28rem;
+  margin: 2rem auto 0;
+}
+
+@media (min-width: 640px) {
+  .button-container {
+    flex-direction: row;
+  }
+}
+
+.error-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: #f8fafc;
+}
+
+.error-button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.error-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error-button-home {
+  background-color: #7f1d1d;
+}
+
+.error-button-home:hover:not(:disabled) {
+  background-color: #581c1c;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(127, 29, 29, 0.3);
+}
+
+.error-button-retry {
+  background-color: #1e3a8a;
+}
+
+.error-button-retry:hover:not(:disabled) {
+  background-color: #1e40af;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(30, 58, 138, 0.3);
+}
+
+.button-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.help-text {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  .error-number {
+    font-size: 8rem;
+  }
+
+  .error-title {
+    font-size: 1.25rem;
+  }
+
+  .error-description {
+    font-size: 0.875rem;
+  }
+
+  .decorative-container {
+    height: 8rem;
+  }
+
+  .circle-1 {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .circle-2 {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .circle-3 {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .error-container {
+    padding: 0.5rem;
+  }
+
+  .error-number {
+    font-size: 6rem;
+  }
+
+  .button-container {
+    max-width: 100%;
+  }
+
+  .error-button {
+    padding: 0.625rem 1rem;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,159 @@
+/**====================
+ * FORM CONTAINER
+ ====================*/
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 3vw, 2rem);
+}
+
+/**====================
+ * AVATAR SECTION
+ ====================*/
+.avatar__section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: clamp(0.75rem, 1.5vw, 1rem);
+}
+
+.avatar__wrapper {
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 0.125rem solid #e5e7eb;
+}
+
+.avatar__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upload__button {
+  gap: 0.5rem;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 0.875rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: #fbbf24;
+  padding: 0.625rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.upload__button:hover {
+  background: #f59e0b;
+}
+
+/**====================
+ * FORM FIELDS
+ ====================*/
+.form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2vw, 1.25rem);
+}
+
+.field__group {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.field__label {
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+.field__input {
+  width: 100%;
+  color: #374151;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  border: 0.0625rem solid #e5e7eb;
+  padding: clamp(0.75rem, 1.5vw, 0.875rem);
+}
+
+.field__input:focus {
+  outline: none;
+  border-color: #fbbf24;
+  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.1);
+}
+
+.field__input::placeholder {
+  color: #9ca3af;
+}
+
+/**====================
+ * PASSWORD WRAPPER
+ ====================*/
+.password__wrapper {
+  position: relative;
+}
+
+.password__toggle {
+  top: 50%;
+  border: none;
+  right: 0.75rem;
+  cursor: pointer;
+  color: #6b7280;
+  position: absolute;
+  background: transparent;
+  transition: all 0.2s ease;
+  transform: translateY(-50%);
+}
+
+.password__toggle:hover {
+  color: #fbbf24;
+}
+
+/**====================
+ * UPDATE BUTTON
+ ====================*/
+.update__button {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  background: #fbbf24;
+  transition: all 0.2s ease;
+  padding: clamp(0.875rem, 1.75vw, 1rem);
+}
+
+.update__button:hover {
+  background: #f59e0b;
+}
+
+.update__button:active {
+  transform: translateY(0.0625rem);
+}
+
+/**====================
+ * RESPONSIVE STYLES
+ ====================*/
+@media (max-width: 30rem) {
+  .form {
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .avatar__wrapper {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .form__fields {
+    gap: clamp(0.75rem, 1.5vw, 1rem);
+  }
+}

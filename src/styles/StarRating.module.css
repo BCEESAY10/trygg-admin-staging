@@ -1,0 +1,27 @@
+/**====================
+ * STAR RATING STYLES
+ ====================*/
+.star__rating {
+  gap: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  font-size: 16px;
+  line-height: 1;
+  transition: all 0.2s ease;
+}
+
+.star__filled {
+  color: #ff6b35;
+}
+
+.star__half {
+  opacity: 0.6;
+  color: #ff6b35;
+}
+
+.star__empty {
+  color: #e5e7eb;
+}

@@ -1,0 +1,94 @@
+/**====================
+ * CONTENT CONTAINER
+ ====================*/
+.content {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+/**====================
+ * ICON SECTION
+ ====================*/
+.icon__section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+}
+
+/**====================
+ * MESSAGE SECTION
+ ====================*/
+.message__section {
+  margin-bottom: 1rem;
+}
+
+.message {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/**====================
+ * ACTION BUTTONS
+ ====================*/
+.action__buttons {
+  width: 100%;
+  gap: 0.75rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cancel__button {
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #fbbf24;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  transition: all 0.15s ease;
+  border: 0.0625rem solid #fbbf24;
+}
+
+.cancel__button:hover {
+  color: #ffffff;
+  background: #fbbf24;
+}
+
+.confirm__button {
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 0.875rem;
+  background: #fbbf24;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.15s ease;
+}
+
+.confirm__button:hover {
+  background: #f59e0b;
+}
+
+/**====================
+ * RESPONSIVE STYLES
+ ====================*/
+@media (max-width: 30rem) {
+  .action__buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .cancel__button,
+  .confirm__button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,107 @@
+/**==============================
+ * DRIVER INFO SKELETON STYLES
+ ==============================*/
+.driver__card {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+/**======================
+ * PROFILE SECTION
+ ======================*/
+.profile__section {
+  display: flex;
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.avatar {
+  border-radius: 50%;
+  width: clamp(3rem, 6vw, 4rem);
+  height: clamp(3rem, 6vw, 4rem);
+}
+
+.profile__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name {
+  border-radius: 0.25rem;
+  width: clamp(8rem, 20vw, 12rem);
+  height: clamp(0.875rem, 2vw, 1rem);
+}
+
+.rating {
+  border-radius: 0.25rem;
+  width: clamp(6rem, 15vw, 10rem);
+  height: clamp(0.75rem, 2vw, 0.875rem);
+}
+
+/**======================
+ * DETAILS GRID
+ ======================*/
+.details__grid {
+  display: grid;
+  gap: clamp(0.75rem, 2vw, 1rem);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.detail__item {
+  display: flex;
+  gap: 0.25rem;
+  flex-direction: column;
+}
+
+.label {
+  border-radius: 0.25rem;
+  width: clamp(5rem, 15vw, 8rem);
+  height: clamp(0.75rem, 2vw, 0.875rem);
+}
+
+.value {
+  width: 100%;
+  border-radius: 0.25rem;
+  height: clamp(0.875rem, 2vw, 1rem);
+}
+
+/**======================
+ * TWO COLUMN SECTION
+ ======================*/
+.two__column {
+  display: grid;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.column__box {
+  width: 100%;
+  border-radius: 0.5rem;
+  height: clamp(10rem, 25vw, 14rem);
+}
+
+/**======================
+ * SHIMMER EFFECT
+ ======================*/
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.skeleton {
+  background: #f6f7f8;
+  background-image: linear-gradient(
+    90deg,
+    #f6f7f8 0px,
+    #edeef1 40px,
+    #f6f7f8 80px
+  );
+  background-size: 200px;
+  animation: shimmer 7s ease-in-out infinite;
+}

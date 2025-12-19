@@ -1,0 +1,87 @@
+/**====================
+ * MODAL BACKDROP
+ ====================*/
+.backdrop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.316);
+}
+
+/**====================
+ * MODAL CONTAINER
+ ====================*/
+.modal {
+  width: 100%;
+  margin: 1rem;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 1rem;
+  background: #ffffff;
+}
+
+/**====================
+ * MODAL HEADER
+ ====================*/
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  justify-content: space-between;
+  border-bottom: 0.0625rem solid #e5e7eb;
+}
+
+.title {
+  margin: 0;
+  font-weight: 600;
+  color: #111827;
+  font-size: 1.25rem;
+}
+
+.close__button {
+  border: none;
+  display: flex;
+  cursor: pointer;
+  padding: 0.25rem;
+  align-items: center;
+  border-radius: 0.375rem;
+  background: transparent;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.close__button:hover {
+  background: #f3f4f6;
+}
+
+/**====================
+ * MODAL CONTENT
+ ====================*/
+.content {
+  padding: 1.5rem;
+}
+
+/**====================
+ * RESPONSIVE STYLES
+ ====================*/
+@media (max-width: 30rem) {
+  .modal {
+    margin: 0.5rem;
+    max-width: calc(100vw - 1rem);
+  }
+
+  .header {
+    padding: 1rem 1rem 0.75rem;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+}

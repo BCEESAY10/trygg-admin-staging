@@ -1,0 +1,320 @@
+/**======================
+ * STATS CARDS SKELETON
+ ======================*/
+.stats__card {
+  display: flex;
+  background: white;
+  border-radius: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(0.5rem, 1.5vw, 1rem);
+  padding: clamp(0.75rem, 2vw, 1rem) clamp(0.75rem, 2vw, 1.25rem)
+    clamp(0.625rem, 1.5vw, 0.625rem);
+}
+
+.icon__wrapper {
+  display: flex;
+  flex-shrink: 0;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  width: clamp(1.75rem, 3vw, 2.5rem);
+  height: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.content {
+  width: 100%;
+}
+
+.title {
+  margin: 0 0 0.5rem 0;
+  border-radius: 0.25rem;
+  width: clamp(4rem, 12vw, 6rem);
+  height: clamp(0.625rem, 1.2vw, 0.8rem);
+}
+
+.value {
+  margin: 0 0 0.5rem 0;
+  border-radius: 0.25rem;
+  width: clamp(5rem, 15vw, 8rem);
+  height: clamp(1rem, 3vw, 1.5rem);
+}
+
+/**==================
+ * FILTERS SKELETON
+ ==================*/
+.filters__section {
+  background: white;
+  border-radius: 1.5rem;
+  padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+.filters__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+.search__wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  min-width: clamp(12rem, 30vw, 20rem);
+}
+
+.search__icon {
+  left: 0.75rem;
+  position: absolute;
+  border-radius: 0.125rem;
+  width: clamp(1rem, 2vw, 1.25rem);
+  height: clamp(1rem, 2vw, 1.25rem);
+}
+
+.search__input {
+  width: 100%;
+  border-radius: 0.5rem;
+  height: clamp(2.25rem, 5vw, 2.75rem);
+}
+
+.filters__group {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 1.5vw, 0.75rem);
+}
+
+.filter__select {
+  border-radius: 0.5rem;
+  width: clamp(6rem, 15vw, 8rem);
+  height: clamp(2.25rem, 5vw, 2.75rem);
+}
+
+.date__input {
+  border-radius: 0.5rem;
+  width: clamp(8rem, 20vw, 10rem);
+  height: clamp(2.25rem, 5vw, 2.75rem);
+}
+
+.reset__button {
+  border-radius: 0.5rem;
+  width: clamp(5rem, 12vw, 7rem);
+  height: clamp(2.25rem, 5vw, 2.75rem);
+}
+
+/**==================
+ * TABLE SKELETON
+ ==================*/
+.table__container {
+  overflow: hidden;
+  background: white;
+  border-radius: 1.5rem;
+}
+
+.table__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table__title {
+  border-radius: 0.25rem;
+  width: clamp(6rem, 18vw, 8rem);
+  height: clamp(1rem, 3vw, 1.5rem);
+}
+
+.table__icon {
+  border-radius: 0.125rem;
+  width: clamp(1rem, 3vw, 1.25rem);
+  height: clamp(1rem, 3vw, 1.25rem);
+}
+
+.table__content {
+  padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+.table__headers {
+  display: grid;
+  gap: clamp(0.75rem, 2vw, 1rem);
+  border-bottom: 1px solid #f3f4f6;
+  grid-template-columns: repeat(8, 1fr);
+  margin-bottom: clamp(0.75rem, 2vw, 1rem);
+  padding-bottom: clamp(0.5rem, 1.5vw, 0.75rem);
+}
+
+.table__header__item {
+  border-radius: 0.25rem;
+  width: clamp(3rem, 8vw, 4rem);
+  height: clamp(0.75rem, 2vw, 1rem);
+}
+
+.table__row {
+  display: grid;
+  align-items: center;
+  gap: clamp(0.75rem, 2vw, 1rem);
+  border-bottom: 1px solid #f9fafb;
+  padding: clamp(0.75rem, 2vw, 1rem) 0;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.table__row:last-child {
+  border-bottom: none;
+}
+
+.table__cell {
+  border-radius: 0.25rem;
+  width: clamp(3rem, 8vw, 4rem);
+  height: clamp(0.75rem, 2vw, 1rem);
+}
+
+.table__cell__with__avatar {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 1.5vw, 0.75rem);
+}
+
+.table__avatar {
+  flex-shrink: 0;
+  border-radius: 50%;
+  width: clamp(1.5rem, 4vw, 2.5rem);
+  height: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.table__name {
+  border-radius: 0.25rem;
+  width: clamp(4rem, 10vw, 6rem);
+  height: clamp(0.75rem, 2vw, 1rem);
+}
+
+.table__cell__stars {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.125rem, 0.5vw, 0.25rem);
+}
+
+.star__skeleton {
+  border-radius: 0.125rem;
+  width: clamp(0.75rem, 2vw, 1rem);
+  height: clamp(0.75rem, 2vw, 1rem);
+}
+
+.table__cell__badge {
+  border-radius: 1rem;
+  width: clamp(4rem, 10vw, 5rem);
+  height: clamp(1.25rem, 3vw, 1.5rem);
+}
+
+.table__cell__action {
+  display: flex;
+  justify-content: center;
+}
+
+.action__button {
+  border-radius: 0.25rem;
+  width: clamp(1.5rem, 4vw, 2rem);
+  height: clamp(1.5rem, 4vw, 2rem);
+}
+
+/**======================
+ * PAGINATION SKELETON
+ ======================*/
+.pagination__info {
+  border-radius: 0.25rem;
+  width: clamp(8rem, 20vw, 12rem);
+  height: clamp(0.875rem, 2vw, 1rem);
+}
+
+.pagination__controls {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.25rem, 1vw, 0.5rem);
+}
+
+.pagination__button {
+  border-radius: 0.375rem;
+  width: clamp(1.625rem, 3vw, 2.25rem);
+  height: clamp(1.625rem, 3vw, 2.25rem);
+}
+
+.pagination__button:first-child,
+.pagination__button:last-child {
+  width: clamp(4rem, 10vw, 5rem);
+}
+
+/**======================
+ * SKELETON BASE STYLES
+ ======================*/
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.skeleton {
+  background: #f6f7f8;
+  background-image: linear-gradient(
+    90deg,
+    #f6f7f8 0px,
+    #edeef1 40px,
+    #f6f7f8 80px
+  );
+  background-size: 200px;
+  animation: shimmer 7s ease-in-out infinite;
+}
+
+/**====================
+ * BREAKPOINT STYLES
+ ====================*/
+@media (max-width: 1200px) {
+  .table__headers,
+  .table__row {
+    grid-template-columns: 1fr;
+    gap: clamp(0.5rem, 1.5vw, 0.75rem);
+  }
+
+  .table__cell__with__avatar {
+    justify-content: flex-start;
+  }
+
+  .table__cell__stars {
+    justify-content: flex-start;
+  }
+
+  .table__cell__action {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .filters__row {
+    align-items: stretch;
+    flex-direction: column;
+    gap: clamp(0.75rem, 2vw, 1rem);
+  }
+
+  .search__wrapper {
+    min-width: 100%;
+  }
+
+  .filters__group {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .filters__group {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .filter__select,
+  .date__input,
+  .reset__button {
+    width: 100%;
+  }
+}

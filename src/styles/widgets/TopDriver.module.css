@@ -1,0 +1,206 @@
+/**===================
+ * TOP DRIVER WIDGET
+ ===================*/
+.widget {
+  padding: 20px;
+  border-radius: 1.5rem;
+  background: #ffffff;
+  border: 1px solid transparent;
+}
+
+.header {
+  gap: 12px;
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.content {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.driver {
+  gap: 12px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.avatar__section {
+  position: relative;
+}
+
+.avatar__wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.avatar__image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fbbf24;
+}
+
+.crown__badge {
+  top: -5px;
+  right: -5px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: absolute;
+  border-radius: 50%;
+  align-items: center;
+  background: #ffffff;
+  justify-content: center;
+  border: 2px solid #fbbf24;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.rating__section {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.stars {
+  gap: 2px;
+  display: flex;
+}
+
+.rating__value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.rides__info {
+  gap: 4px;
+  display: flex;
+  align-items: baseline;
+}
+
+.rides__count {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fbbf24;
+}
+
+.rides__label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.view__all {
+  padding-top: 12px;
+  text-align: center;
+  border-top: 1px solid #f3f4f6;
+}
+
+.view__all span {
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #fbbf24;
+  transition: color 0.15s ease;
+}
+
+.view__all span:hover {
+  color: #f59e0b;
+}
+
+/**===================
+ * BREAKPOINT STYLES
+ ===================*/
+@media (max-width: 768px) {
+  .widget {
+    padding: 16px;
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .rides__count {
+    font-size: 20px;
+  }
+
+  .avatar__image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .crown__badge {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .widget {
+    padding: 12px;
+  }
+
+  .avatar__image {
+    width: 45px;
+    height: 45px;
+  }
+
+  .crown__badge {
+    width: 18px;
+    height: 18px;
+  }
+
+  .rides__count {
+    font-size: 18px;
+  }
+
+  .name {
+    font-size: 15px;
+  }
+
+  .rides__label {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .widget {
+    padding: 10px;
+  }
+
+  .avatar__image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .crown__badge {
+    width: 16px;
+    height: 16px;
+  }
+
+  .rides__count {
+    font-size: 16px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+}

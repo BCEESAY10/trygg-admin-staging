@@ -1,0 +1,417 @@
+/**========================
+ * REVIEWS PAGE STYLES
+ ========================*/
+.reviews__page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+/**=====================
+ * MAIN LAYOUT STYLES
+ =====================*/
+.reviews__layout {
+  gap: 1rem;
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: auto 1fr auto;
+}
+
+/**====================
+ * LEFT COLUMN STYLES
+ ====================*/
+.left__column {
+  gap: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  min-width: clamp(12rem, 18vw, 15rem);
+}
+
+.filter__card,
+.rating__card {
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 1.5rem;
+  border: 0.0625rem solid transparent;
+}
+
+.feedback__title {
+  color: #111827;
+  font-weight: 600;
+  margin: 0 0 clamp(1rem, 2vw, 1.5rem) 0;
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+
+/**==========================
+ * FILTER TABS STYLES
+ ==========================*/
+.filter__tabs {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.5rem, 1vw, 0.75rem);
+}
+
+.filter__tab {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  color: #6b7280;
+  font-weight: 500;
+  text-align: left;
+  border-radius: 0.5rem;
+  background: transparent;
+  transition: all 0.15s ease;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  padding: clamp(0.5rem, 1vw, 0.75rem) clamp(0.75rem, 1.5vw, 1rem);
+}
+
+.filter__tab:hover {
+  color: #374151;
+  background: #f9fafb;
+}
+
+.filter__tab.active {
+  color: #fbbf24;
+  font-weight: 600;
+  background: #fffbeb;
+}
+
+/**==========================
+ * OVERALL RATING STYLES
+ ==========================*/
+.overall__rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.rating__number {
+  color: #111827;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+}
+
+.rating__details {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.25rem, 0.5vw, 0.5rem);
+}
+
+.rating__text {
+  color: #6b7280;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+}
+
+.overall__stars {
+  display: flex;
+  gap: 0.125rem;
+}
+
+/**=====================
+ * STAR RATING STYLES
+ =====================*/
+.star__rating {
+  display: flex;
+  gap: 0.125rem;
+}
+
+.star {
+  color: #d1d5db;
+  transition: color 0.15s ease;
+}
+
+.star.filled {
+  color: #fbbf24;
+}
+
+/**==========================
+ * REVIEWS COLUMN STYLES
+ ==========================*/
+.reviews__column {
+  gap: 0.7rem;
+  display: grid;
+  grid-auto-rows: 1fr;
+}
+
+.review__card {
+  display: flex;
+  min-height: 0;
+  min-width: clamp(24rem, 35vw, 50rem);
+  background: #ffffff;
+  border-radius: 1.5rem;
+  flex-direction: column;
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border: 0.0625rem solid transparent;
+}
+
+.review__header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(0.75rem, 1.5vw, 1rem);
+}
+
+.reviewer__info {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.75rem, 1.5vw, 1rem);
+}
+
+.reviewer__avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.avatar__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reviewer__details {
+  display: flex;
+  gap: 0.125rem;
+  flex-direction: column;
+}
+
+.reviewer__name {
+  margin: 0;
+  color: #111827;
+  font-weight: 600;
+  font-size: clamp(0.875rem, 1.75vw, 1rem);
+}
+
+.review__date {
+  color: #9ca3af;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+}
+
+.review__rating {
+  flex-shrink: 0;
+}
+
+.review__content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: clamp(0.5rem, 1vw, 0.75rem);
+}
+
+.review__text {
+  margin: 0;
+  color: #374151;
+  line-height: 1.6;
+  font-size: clamp(0.875rem, 1.75vw, 1rem);
+}
+
+.driver__attribution {
+  color: #9ca3af;
+  font-weight: 500;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+}
+
+/**============================
+ * TOP DRIVERS SECTION STYLES
+ ============================*/
+.top__drivers__section {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  border: 0.0625rem solid transparent;
+  min-width: clamp(15rem, 20vw, 18rem);
+  padding: 1rem clamp(1.5rem, 3vw, 1.7rem) 0;
+}
+
+.top__drivers__header {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.top__drivers__title {
+  margin: 0;
+  color: #111827;
+  font-weight: 600;
+  font-size: clamp(1.125rem, 2.25vw, 1.375rem);
+}
+
+.view__more__button {
+  border: none;
+  cursor: pointer;
+  color: #fbbf24;
+  font-weight: 500;
+  text-decoration: none;
+  background: transparent;
+  transition: color 0.15s ease;
+  font-size: clamp(0.875rem, 1.75vw, 1rem);
+}
+
+.view__more__button:hover {
+  color: #f59e0b;
+  text-decoration: underline;
+}
+
+/**==========================
+ * TOP DRIVERS LIST STYLES
+ ==========================*/
+.top__drivers__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.driver__item {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.75rem, 1.5vw, 1rem);
+  transition: background 0.15s ease;
+  padding: clamp(0.75rem, 1.5vw, 1rem) 0;
+}
+
+.driver__item.with__border {
+  border-bottom: 0.0625rem solid #e1e2e2;
+}
+
+.driver__rank {
+  color: #374151;
+  font-weight: 600;
+  min-width: clamp(1.5rem, 3vw, 2rem);
+  font-size: clamp(0.875rem, 1.75vw, 1rem);
+}
+
+.driver__info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 1vw, 0.75rem);
+}
+
+.driver__avatar {
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.driver__name {
+  color: #6b7280;
+  font-weight: 500;
+  font-size: clamp(0.875rem, 1.75vw, 1rem);
+}
+
+.driver__view__more {
+  border: none;
+  cursor: pointer;
+  color: #fbbf24;
+  font-weight: 500;
+  text-decoration: none;
+  background: transparent;
+  transition: color 0.15s ease;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+}
+
+.driver__view__more:hover {
+  color: #f59e0b;
+  text-decoration: underline;
+}
+
+/**===================
+ * BREAKPOINT STYLES
+ ===================*/
+@media (min-width: 1200px) {
+  .left__column {
+    position: fixed;
+    top: clamp(4.5rem, 8vw, 5.5rem);
+    left: calc(clamp(12rem, 20vw, 15.625rem) + clamp(0.75rem, 2vw, 1.5rem));
+  }
+
+  .top__drivers__section {
+    position: fixed;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    top: clamp(4.5rem, 8vw, 5.5rem);
+    right: clamp(0.75rem, 2vw, 1.5rem);
+    height: calc(100vh - clamp(4.5rem, 8vw, 5rem));
+  }
+
+  .top__drivers__section::-webkit-scrollbar {
+    display: none;
+  }
+
+  .reviews__column {
+    margin-right: calc(clamp(15rem, 20vw, 18rem) + 2rem);
+    margin-left: calc(clamp(12rem, 18vw, 15rem) + 0.7rem);
+  }
+}
+
+@media (max-width: 1200px) {
+  .reviews__layout {
+    grid-template-columns: 1fr;
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .left__column {
+    order: 1;
+    flex-direction: row;
+    gap: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .filter__card,
+  .rating__card {
+    flex: 1;
+  }
+
+  .reviews__column {
+    order: 2;
+  }
+
+  .top__drivers__section {
+    order: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .left__column {
+    flex-direction: column;
+  }
+
+  .filter__card,
+  .rating__card,
+  .review__card,
+  .top__drivers__section {
+    padding: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .review__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(0.5rem, 1vw, 0.75rem);
+  }
+
+  .reviewer__info {
+    width: 100%;
+  }
+
+  .overall__rating {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(0.75rem, 1.5vw, 1rem);
+  }
+}
+
+@media (max-width: 540px) {
+  .driver__item {
+    gap: clamp(0.5rem, 1vw, 0.75rem);
+  }
+
+  .driver__rank {
+    min-width: clamp(1.25rem, 2.5vw, 1.5rem);
+  }
+}

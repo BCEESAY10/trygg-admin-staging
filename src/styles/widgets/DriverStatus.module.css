@@ -1,0 +1,153 @@
+/**=====================
+ * DRIVER STATUS WIDGET
+ =====================*/
+.widget {
+  padding: 20px;
+  border-radius: 1.5rem;
+  background: #ffffff;
+  border: 1px solid transparent;
+}
+
+.header {
+  gap: 12px;
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.content {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main__stat {
+  gap: 4px;
+  display: flex;
+  text-align: center;
+  align-items: baseline;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.count {
+  font-size: 32px;
+  font-weight: 700;
+  color: #dc2626;
+}
+
+.label {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.breakdown {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.breakdown__item {
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.indicator__critical {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #dc2626;
+}
+
+.indicator__warning {
+  width: 8px;
+  height: 8px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #f59e0b;
+}
+
+.breakdown__text {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.view__details {
+  gap: 6px;
+  display: flex;
+  cursor: pointer;
+  padding-top: 12px;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease;
+  border-top: 1px solid #f3f4f6;
+}
+
+.view__details span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.view__details:hover span {
+  color: #fbbf24;
+}
+
+/**===================
+ * BREAKPOINT STYLES
+ ===================*/
+@media (max-width: 768px) {
+  .widget {
+    padding: 16px;
+  }
+
+  .count {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 540px) {
+  .widget {
+    padding: 12px;
+  }
+
+  .count {
+    font-size: 24px;
+  }
+
+  .label {
+    font-size: 13px;
+  }
+
+  .breakdown__text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .widget {
+    padding: 10px;
+  }
+
+  .count {
+    font-size: 20px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+
+  .breakdown__text {
+    font-size: 11px;
+  }
+}

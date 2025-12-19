@@ -1,0 +1,291 @@
+/**========================
+ * SETTINGS PAGE STYLES
+ ========================*/
+.settings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+/**==========================
+ * SETTINGS CONTAINER STYLES
+ ==========================*/
+.settings__container {
+  width: 100%;
+  display: flex;
+  border-radius: 1.5rem;
+  padding: 1rem 1rem 1rem 0;
+  gap: clamp(1.5rem, 3vw, 2rem);
+  border: 0.0625rem solid transparent;
+}
+
+/**=======================
+ * TAB NAVIGATION STYLES
+ =======================*/
+.tab__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.5rem, 1vw, 0.75rem);
+  min-width: clamp(10rem, 15vw, 12rem);
+  border-right: 0.0625rem solid #c9cbce;
+  padding-right: clamp(1rem, 2vw, 1.5rem);
+}
+
+.tab__button {
+  gap: 0.75rem;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  color: #6b7280;
+  font-weight: 500;
+  text-align: left;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: transparent;
+  transition: all 0.15s ease;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  padding: 0.7rem clamp(1rem, 2vw, 1.25rem);
+}
+
+.tab__button:hover {
+  color: #374151;
+  background: #f9fafb;
+}
+
+.tab__button.active {
+  color: #ffffff;
+  font-weight: 600;
+  background: #fbbf24;
+}
+
+/**==================
+ * TAB CONTENT STYLES
+ ==================*/
+.tab__content {
+  flex: 1;
+  min-height: 20rem;
+}
+
+/**================
+ * FORM STYLES
+ ================*/
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.5rem, 3vw, 2rem);
+}
+
+/**======================
+ * AVATAR SECTION STYLES
+ ======================*/
+.avatar__section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: clamp(0.75rem, 1.5vw, 1rem);
+}
+
+.avatar__wrapper {
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 0.125rem solid #e5e7eb;
+}
+
+.avatar__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upload__button {
+  gap: 0.5rem;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 0.875rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  background: #fbbf24;
+  padding: 0.625rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.upload__button:hover {
+  background: #f59e0b;
+}
+
+/**===================
+ * FORM FIELDS STYLES
+ ===================*/
+.form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1rem, 2vw, 1.25rem);
+}
+
+.field__group {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.field__label {
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+.field__input,
+.field__select {
+  width: 100%;
+  color: #374151;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  border: 0.0625rem solid transparent;
+  padding: clamp(0.75rem, 1.5vw, 0.875rem);
+}
+
+.field__input:focus,
+.field__select:focus {
+  outline: none;
+  border-color: #fbbf24;
+  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.1);
+}
+
+.field__input::placeholder {
+  color: #9ca3af;
+}
+
+.field__select {
+  cursor: pointer;
+}
+
+/**=========================
+ * PASSWORD WRAPPER STYLES
+ =========================*/
+.password__wrapper {
+  position: relative;
+}
+
+.password__toggle {
+  top: 50%;
+  border: none;
+  right: 0.75rem;
+  cursor: pointer;
+  color: #6b7280;
+  position: absolute;
+  background: transparent;
+  transition: all 0.2s ease;
+  transform: translateY(-50%);
+}
+
+.password__toggle:hover {
+  color: #fbbf24;
+}
+
+/**=======================
+ * CHECKBOX STYLES
+ =======================*/
+.checkbox__container {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 1vw, 0.75rem);
+}
+
+.checkbox {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  accent-color: #fbbf24;
+}
+
+.checkbox__label {
+  cursor: pointer;
+  font-weight: 500;
+  color: #374151;
+  user-select: none;
+  font-size: 0.875rem;
+}
+
+/**=====================
+ * SUBMIT BUTTON STYLES
+ =====================*/
+.submit__button {
+  border: none;
+  width: auto;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  background: #fbbf24;
+  transition: all 0.2s ease;
+  padding: clamp(0.875rem, 1.75vw, 1rem);
+}
+
+.submit__button:hover {
+  background: #f59e0b;
+}
+
+.submit__button:active {
+  transform: translateY(0.0625rem);
+}
+
+/**===================
+ * BREAKPOINT STYLES
+ ===================*/
+@media (max-width: 768px) {
+  .settings__container {
+    flex-direction: column;
+    gap: clamp(1rem, 2vw, 1.5rem);
+    padding: clamp(1rem, 2vw, 1.5rem);
+  }
+
+  .tab__navigation {
+    min-width: auto;
+    flex-direction: row;
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 0.0625rem solid #e5e7eb;
+    padding-bottom: clamp(0.75rem, 1.5vw, 1rem);
+  }
+
+  .tab__button {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+    padding: clamp(0.5rem, 1vw, 0.75rem) clamp(0.75rem, 1.5vw, 1rem);
+  }
+
+  .avatar__wrapper {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .form__fields {
+    gap: clamp(0.75rem, 1.5vw, 1rem);
+  }
+}
+
+@media (max-width: 540px) {
+  .tab__navigation {
+    padding-bottom: 0;
+    border-bottom: none;
+    flex-direction: column;
+  }
+
+  .tab__button {
+    text-align: left;
+    justify-content: flex-start;
+  }
+}

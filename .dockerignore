@@ -1,0 +1,31 @@
+# dependencies
+node_modules
+
+# next.js build output
+.next
+out
+
+# local env files
+.env.local
+.env.development
+.env.test
+
+Dockerfile
+# public/car.webp
+# public/icon.png
+public/profiles/*
+public/vehicles/*
+# public/user-placeholder.avif
+public/documents/license.jpg
+public/documents/passbook.jpg
+public/documents/driver-license.jpg
+
+# misc
+npm-debug.log
+yarn-error.log
+.vscode
+*.log
+.git
+.gitignore
+.hintrc
+.dockerignore

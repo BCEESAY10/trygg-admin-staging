@@ -1,0 +1,152 @@
+/**==================
+ * RIDES PAGE STYLES
+ ==================*/
+.rides__page {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+}
+
+/**=====================
+ * STATS SECTION STYLES
+ =====================*/
+.stats__section {
+  display: grid;
+  gap: clamp(0.75rem, 2vw, 1.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+/**======================
+ * TABLE WITH ICON STYLES
+ ======================*/
+.table__with__icon {
+  position: relative;
+}
+
+.table__with__icon > svg {
+  z-index: 10;
+  position: absolute;
+  top: clamp(1rem, 2vw, 1.25rem);
+  right: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+/**======================
+ * ACTION BUTTON STYLES
+ ======================*/
+.action__button {
+  border: none;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 0.25rem;
+  background: transparent;
+  justify-content: center;
+  transition: all 0.15s ease;
+  padding: clamp(0.375rem, 1vw, 0.5rem);
+}
+
+.action__button:hover {
+  background: #f3f4f6;
+}
+
+.pagination__button:first-child,
+.pagination__button:last-child {
+  width: auto;
+  padding: clamp(0.5rem, 1vw, 0.5rem) clamp(0.75rem, 1.5vw, 1rem);
+}
+
+/**======================
+ * PAGINATION STYLES
+ ======================*/
+.pagination__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(0.5rem, 1.5vw, 1rem);
+  margin-top: clamp(0.75rem, 2vw, 1.25rem);
+}
+
+.pagination__info {
+  font-weight: 500;
+  color: #6b7280;
+  font-size: clamp(0.6875rem, 1.2vw, 0.875rem);
+}
+
+.pagination__controls {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.25rem, 1vw, 0.5rem);
+}
+
+.pagination__button {
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #374151;
+  background: #ffffff;
+  border-radius: 0.375rem;
+  transition: all 0.15s ease;
+  border: 0.0625rem solid transparent;
+  width: clamp(1.625rem, 3vw, 2.25rem);
+  height: clamp(1.625rem, 3vw, 2.25rem);
+  font-size: clamp(0.625rem, 1.2vw, 0.875rem);
+}
+
+.pagination__button:hover {
+  color: #fbbf24;
+  border-color: #fbbf24;
+}
+
+.pagination__button:disabled {
+  opacity: 0.5;
+  color: #9ca3af;
+  cursor: not-allowed;
+  border-color: #e5e7eb;
+}
+
+.pagination__button:disabled:hover {
+  color: #9ca3af;
+  border-color: #e5e7eb;
+}
+
+.pagination__button.active {
+  color: #ffffff;
+  background: #fbbf24;
+  border-color: #fbbf24;
+}
+
+/**===================
+ * BREAKPOINT STYLES
+ ===================*/
+@media (max-width: 48rem) {
+  .table__with__icon > svg {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .pagination__section {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .pagination__controls {
+    justify-content: center;
+  }
+
+  .pagination__info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 33.75rem) {
+  .pagination__controls {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 30rem) {
+  .pagination__controls {
+    gap: 0.0625rem;
+  }
+}

@@ -1,0 +1,483 @@
+/**======================
+ * STATS CARDS SKELETON
+ ======================*/
+.stats__card {
+  display: flex;
+  background: white;
+  border-radius: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(0.5rem, 1.5vw, 1rem);
+  padding: clamp(0.75rem, 2vw, 1rem) clamp(0.75rem, 2vw, 1.25rem)
+    clamp(0.625rem, 1.5vw, 0.625rem);
+}
+
+.icon__wrapper {
+  display: flex;
+  flex-shrink: 0;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  width: clamp(1.75rem, 3vw, 2.5rem);
+  height: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.content {
+  width: 100%;
+}
+
+.title {
+  border-radius: 0.25rem;
+  margin: 0 0 0.5rem 0;
+  width: clamp(4rem, 12vw, 6rem);
+  height: clamp(0.625rem, 1.2vw, 0.8rem);
+}
+
+.value {
+  border-radius: 0.25rem;
+  margin: 0 0 0.5rem 0;
+  width: clamp(5rem, 15vw, 8rem);
+  height: clamp(1rem, 3vw, 1.5rem);
+}
+
+/**======================
+ * MAP SECTION SKELETON
+ ======================*/
+/* ==================== Stats Cards Skeleton ==================== */
+.stats__card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.icon__wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 0.75rem;
+  flex-shrink: 0;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title {
+  height: 14px;
+  width: 120px;
+  border-radius: 4px;
+}
+
+.value {
+  height: 24px;
+  width: 80px;
+  border-radius: 4px;
+}
+
+/* ==================== Map Section Skeleton ==================== */
+.map__skeleton {
+  height: 500px;
+  width: 100%;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    #f0f0f0 0%,
+    #e8e8e8 25%,
+    #f0f0f0 50%,
+    #e8e8e8 75%,
+    #f0f0f0 100%
+  );
+  background-size: 400% 400%;
+}
+
+.map__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: white;
+  border-radius: 1.5rem 1.5rem 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.map__title {
+  height: 20px;
+  width: 150px;
+  border-radius: 4px;
+}
+
+.map__status {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.driver__count {
+  height: 18px;
+  width: 120px;
+  border-radius: 4px;
+}
+
+.connection__status {
+  height: 18px;
+  width: 140px;
+  border-radius: 4px;
+}
+
+/**==================
+ * CHART SKELETON
+ ==================*/
+.chart__container {
+  background: white;
+  border-radius: 1.5rem;
+  padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+.chart__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(1rem, 3vw, 1.5rem);
+}
+
+.chart__title {
+  border-radius: 0.25rem;
+  width: clamp(8rem, 25vw, 12rem);
+  height: clamp(1rem, 3vw, 1.5rem);
+}
+
+.chart__icon {
+  border-radius: 0.125rem;
+  width: clamp(1rem, 3vw, 1.25rem);
+  height: clamp(1rem, 3vw, 1.25rem);
+}
+
+.chart__content {
+  width: 100%;
+  border-radius: 1.5rem;
+  height: clamp(15rem, 40vw, 20rem);
+}
+
+/**==================
+ * WIDGET SKELETON
+ ==================*/
+.widget__container {
+  background: white;
+  border-radius: 1.5rem;
+  padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+.widget__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(0.75rem, 2vw, 1rem);
+}
+
+.widget__title {
+  border-radius: 0.25rem;
+  width: clamp(5rem, 15vw, 8rem);
+  height: clamp(1rem, 3vw, 1.5rem);
+}
+
+.widget__icon {
+  border-radius: 0.125rem;
+  width: clamp(1rem, 3vw, 1.25rem);
+  height: clamp(1rem, 3vw, 1.25rem);
+}
+
+/**============================
+ * TOP DRIVER WIDGET SKELETON
+ ============================*/
+.top__driver__content {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: clamp(0.5rem, 1.5vw, 0.75rem);
+}
+
+.driver__avatar__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: clamp(0.5rem, 1.5vw, 0.75rem);
+}
+
+.driver__avatar {
+  border-radius: 50%;
+  width: clamp(3.75rem, 8vw, 5rem);
+  height: clamp(3.75rem, 8vw, 5rem);
+}
+
+.driver__name {
+  border-radius: 0.25rem;
+  width: clamp(6rem, 18vw, 8rem);
+  height: clamp(1rem, 3vw, 1.25rem);
+}
+
+.driver__rating {
+  border-radius: 0.25rem;
+  width: clamp(4rem, 12vw, 6rem);
+  height: clamp(0.75rem, 2vw, 1rem);
+}
+
+.driver__rides {
+  border-radius: 0.25rem;
+  width: clamp(5rem, 15vw, 7rem);
+  height: clamp(0.75rem, 2vw, 1rem);
+}
+
+/**============================
+ * DRIVER STATUS WIDGET SKELETON
+ ============================*/
+.driver__status__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(0.25rem, 1vw, 0.5rem);
+}
+
+.status__count {
+  border-radius: 0.25rem;
+  width: clamp(3rem, 8vw, 4rem);
+  height: clamp(1.5rem, 4vw, 2rem);
+}
+
+.status__label {
+  border-radius: 0.25rem;
+  width: clamp(5rem, 15vw, 7rem);
+  height: clamp(0.75rem, 2vw, 1rem);
+}
+
+/**==================
+ * TABLE SKELETON
+ ==================*/
+.table__container {
+  overflow: hidden;
+  background: white;
+  border-radius: 1.5rem;
+}
+
+.table__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table__title {
+  border-radius: 0.25rem;
+  width: clamp(6rem, 18vw, 10rem);
+  height: clamp(1rem, 3vw, 1.5rem);
+}
+
+.table__content {
+  padding: clamp(1rem, 3vw, 1.5rem);
+}
+
+.table__headers {
+  display: grid;
+  gap: clamp(0.75rem, 2vw, 1rem);
+  border-bottom: 1px solid #f3f4f6;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: clamp(0.75rem, 2vw, 1rem);
+  padding-bottom: clamp(0.5rem, 1.5vw, 0.75rem);
+}
+
+.table__header__item {
+  border-radius: 0.25rem;
+  width: clamp(3rem, 10vw, 5rem);
+  height: clamp(0.75rem, 2vw, 1rem);
+}
+
+.table__row {
+  display: grid;
+  align-items: center;
+  gap: clamp(0.75rem, 2vw, 1rem);
+  border-bottom: 1px solid #f9fafb;
+  grid-template-columns: repeat(4, 1fr);
+  padding: clamp(0.5rem, 1.5vw, 0.75rem) 0;
+}
+
+.table__row:last-child {
+  border-bottom: none;
+}
+
+.table__cell {
+  border-radius: 0.25rem;
+  width: clamp(3rem, 10vw, 4rem);
+  height: clamp(0.75rem, 2vw, 1rem);
+}
+
+.table__cell__with__avatar {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 1.5vw, 0.75rem);
+}
+
+.table__avatar {
+  flex-shrink: 0;
+  border-radius: 50%;
+  width: clamp(1.5rem, 4vw, 2rem);
+  height: clamp(1.5rem, 4vw, 2rem);
+}
+
+.table__name {
+  border-radius: 0.25rem;
+  width: clamp(4rem, 12vw, 5rem);
+  height: clamp(0.75rem, 2vw, 1rem);
+}
+
+.table__cell__actions {
+  display: flex;
+  gap: clamp(0.25rem, 1vw, 0.5rem);
+}
+
+.action__button {
+  border-radius: 0.25rem;
+  width: clamp(3rem, 8vw, 4rem);
+  height: clamp(1.5rem, 4vw, 2rem);
+}
+
+/**==================
+ * ALERTS WIDGET SKELETON
+ ==================*/
+.alerts__content {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.75rem, 2vw, 1rem);
+}
+
+.main__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: clamp(0.25rem, 1vw, 0.5rem);
+}
+
+.main__count {
+  border-radius: 0.25rem;
+  width: clamp(3rem, 8vw, 4rem);
+  height: clamp(1.5rem, 4vw, 2rem);
+}
+
+.main__label {
+  border-radius: 0.25rem;
+  width: clamp(6rem, 18vw, 8rem);
+  height: clamp(0.75rem, 2vw, 1rem);
+}
+
+.breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.5rem, 1.5vw, 0.75rem);
+}
+
+.breakdown__item {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 1.5vw, 0.75rem);
+}
+
+.indicator {
+  flex-shrink: 0;
+  border-radius: 50%;
+  width: clamp(0.5rem, 1.5vw, 0.75rem);
+  height: clamp(0.5rem, 1.5vw, 0.75rem);
+}
+
+.breakdown__text {
+  border-radius: 0.25rem;
+  width: clamp(5rem, 15vw, 8rem);
+  height: clamp(0.75rem, 2vw, 1rem);
+}
+
+/**============================
+ * APPLICATION STATS SKELETON
+ ============================*/
+.application__stats__content {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.75rem, 2vw, 1rem);
+}
+
+.stat__section {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.25rem, 1vw, 0.5rem);
+}
+
+.stat__icon {
+  flex-shrink: 0;
+  border-radius: 0.125rem;
+  width: clamp(1rem, 3vw, 1.25rem);
+  height: clamp(1rem, 3vw, 1.25rem);
+}
+
+.stat__count {
+  border-radius: 0.25rem;
+  width: clamp(2rem, 6vw, 3rem);
+  height: clamp(0.75rem, 2vw, 1rem);
+}
+
+/**======================
+ * SKELETON BASE STYLES
+ ======================*/
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.skeleton {
+  background: #f6f7f8;
+  background-image: linear-gradient(
+    90deg,
+    #f6f7f8 0px,
+    #edeef1 40px,
+    #f6f7f8 80px
+  );
+  background-size: 200px;
+  animation: shimmer 7s ease-in-out infinite;
+}
+
+/**====================
+ * BREAKPOINT STYLES
+ ====================*/
+@media (max-width: 1200px) {
+  .table__headers,
+  .table__row {
+    grid-template-columns: 1fr;
+    gap: clamp(0.5rem, 1.5vw, 0.75rem);
+  }
+
+  .table__cell__with__avatar {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .chart__header {
+    flex-direction: column;
+    gap: clamp(0.5rem, 1.5vw, 0.75rem);
+  }
+}

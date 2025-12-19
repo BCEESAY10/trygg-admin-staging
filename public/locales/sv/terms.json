@@ -1,0 +1,76 @@
+{
+  "terms": {
+    "title": "Villkor",
+    "description": "Villkor för Trygg Admin-plattformen",
+    "lastUpdated": "Senast uppdaterad: 15 augusti 2025",
+    "sections": {
+      "introduction": {
+        "title": "1. Introduktion",
+        "text": "Välkommen till Trygg Admin-plattformen. Dessa villkor reglerar din användning av vårt administrativa system som är utformat för att hantera transporttjänster, förare, passagerare och relaterade operationer. Genom att få tillgång till eller använda denna plattform godkänner du att följa dessa villkor."
+      },
+      "acceptance": {
+        "title": "2. Godkännande av villkor",
+        "text": "Genom att använda Trygg Admin-plattformen bekräftar du att du har läst, förstått och godkänner dessa villkor. Om du inte accepterar villkoren får du inte använda plattformen."
+      },
+      "platformAccess": {
+        "title": "3. Plattformstillgång",
+        "authorization": {
+          "title": "3.1 Auktorisation",
+          "text": "Tillgång till denna plattform är begränsad till auktoriserad personal. Användare måste ha giltiga referenser och lämpliga behörighetsnivåer för att få åtkomst till specifika funktioner."
+        },
+        "accountSecurity": {
+          "title": "3.2 Kontosäkerhet",
+          "text": "Användare ansvarar för att upprätthålla sekretessen för sina inloggningsuppgifter och för alla aktiviteter som sker under deras konto."
+        }
+      },
+      "dataManagement": {
+        "title": "4. Databehandling",
+        "dataIntegrity": {
+          "title": "4.1 Dataintegritet",
+          "text": "Användare måste säkerställa att all data som anges i systemet är korrekt, fullständig och uppdaterad. Avsiktlig inmatning av falsk eller vilseledande information är strikt förbjuden."
+        },
+        "privacyCompliance": {
+          "title": "4.2 Integritetsföreskrifter",
+          "text": "All personlig information måste hanteras i enlighet med tillämpliga lagar och regler om integritet. Användare måste respektera integritetsrättigheter för förare, passagerare och andra intressenter."
+        }
+      },
+      "userResponsibilities": {
+        "title": "5. Användarens ansvar",
+        "list": [
+          "Upprätthålla korrekt och aktuell information i alla register",
+          "Följa alla tillämpliga lagar och regler",
+          "Skydda konfidentiell och känslig information",
+          "Rapportera omedelbart säkerhetsincidenter eller dataintrång",
+          "Använd plattformen enbart för auktoriserade affärsändamål"
+        ]
+      },
+      "prohibitedActivities": {
+        "title": "6. Förbjudna aktiviteter",
+        "intro": "Användare är uttryckligen förbjudna från:",
+        "list": [
+          "Försök att få obehörig åtkomst till någon del av systemet",
+          "Dela inloggningsuppgifter med obehöriga",
+          "Använda plattformen för personliga eller icke-affärsmässiga syften",
+          "Modifiera, omvänd konstruera eller försöka extrahera källkod",
+          "Störa plattformens normala funktion"
+        ]
+      },
+      "limitationOfLiability": {
+        "title": "7. Ansvarsbegränsning",
+        "text": "Trygg Admin-plattformen tillhandahålls \"i befintligt skick\" utan några garantier. I den utsträckning lagen tillåter, friskriver vi oss från allt ansvar för eventuella skador som uppstår från användning av plattformen, inklusive men inte begränsat till direkta, indirekta, tillfälliga eller följdskador."
+      },
+      "termination": {
+        "title": "8. Avslut",
+        "text": "Vi förbehåller oss rätten att avsluta eller suspendera åtkomst till plattformen när som helst, utan föregående meddelande, för överträdelser av dessa villkor eller av andra skäl vi anser lämpliga."
+      },
+      "changes": {
+        "title": "9. Ändringar av villkor",
+        "text": "Vi förbehåller oss rätten att ändra dessa villkor när som helst. Användare kommer att meddelas om betydande ändringar, och fortsatt användning av plattformen innebär acceptans av de ändrade villkoren."
+      },
+      "contact": {
+        "title": "10. Kontaktinformation",
+        "text": "För frågor angående dessa villkor, kontakta vår juridiska avdelning eller systemadministratörer via lämpliga kanaler inom din organisation."
+      }
+    }
+  }
+}

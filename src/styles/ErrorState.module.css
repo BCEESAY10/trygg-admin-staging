@@ -1,0 +1,130 @@
+/**===================
+ * ERROR STATE STYLES
+ ===================*/
+.error__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 3vw, 2rem);
+  min-height: clamp(20rem, 50vh, 30rem);
+}
+
+.error__content {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 1.5rem;
+  flex-direction: column;
+  gap: clamp(1.5rem, 3vw, 2rem);
+  max-width: clamp(20rem, 90vw, 28rem);
+  padding: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 3vw, 2rem);
+}
+
+/**==================
+ * ICON SECTION
+ ==================*/
+.icon__wrapper {
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  background: #fef3c7;
+  justify-content: center;
+  width: clamp(4rem, 10vw, 5rem);
+  height: clamp(4rem, 10vw, 5rem);
+}
+
+.error__icon {
+  color: #fbbf24;
+}
+
+/**==================
+ * TEXT SECTION
+ ==================*/
+.text__section {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(0.75rem, 2vw, 1rem);
+}
+
+.error__title {
+  margin: 0;
+  font-weight: 600;
+  color: #111827;
+  line-height: 1.2;
+  font-size: clamp(1.25rem, 3vw, 1.5rem);
+}
+
+.error__message {
+  margin: 0;
+  color: #6b7280;
+  line-height: 1.5;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+/**==================
+ * ACTION SECTION
+ ==================*/
+.action__section {
+  display: flex;
+  justify-content: center;
+}
+
+.retry__button {
+  gap: 0.5rem;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  color: #111827;
+  align-items: center;
+  background: #fbbf24;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  padding: clamp(0.75rem, 2vw, 1rem) clamp(1.25rem, 3vw, 1.5rem);
+}
+
+.retry__button:hover {
+  background: #f59e0b;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+}
+
+.retry__button:active {
+  transform: translateY(0);
+}
+
+.retry__button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.3);
+}
+
+/**===================
+ * RESPONSIVE STYLES
+ ===================*/
+@media (max-width: 768px) {
+  .error__container {
+    padding: clamp(1rem, 4vw, 1.5rem);
+    min-height: clamp(18rem, 40vh, 25rem);
+  }
+
+  .error__content {
+    padding: clamp(1.5rem, 4vw, 2rem) clamp(1rem, 3vw, 1.5rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .error__container {
+    min-height: clamp(16rem, 35vh, 20rem);
+  }
+
+  .error__content {
+    max-width: 100%;
+  }
+
+  .retry__button {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,335 @@
+/**==================
+ * CONTAINER STYLES
+ ==================*/
+.container {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', sans-serif;
+}
+
+.form__section {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  background: #ffffff;
+  justify-content: center;
+}
+
+/**===================
+ * LOGIN CARD STYLES
+ ===================*/
+.login__card {
+  width: 100%;
+  padding: 40px;
+  max-width: 420px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.login__card::before {
+  display: none;
+}
+
+/**=====================
+ * LOGO SECTION STYLES
+ =====================*/
+.logo__section {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.logo__placeholder {
+  width: 80px;
+  height: 80px;
+  padding: 8px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 16px rgba(255, 193, 7, 0.2);
+  background: linear-gradient(135deg, #ffee9f 0%, #ffc107 100%);
+}
+
+.logo__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+/**================
+ * WELCOME STYLES
+ ================*/
+.welcome {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/**===============
+ * FORM STYLES
+ ===============*/
+.form {
+  margin-bottom: 24px;
+}
+
+.input__group {
+  margin-bottom: 20px;
+}
+
+.label {
+  color: #333;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.input {
+  width: 100%;
+  font-size: 16px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: transparent;
+  transition: all 0.3s ease;
+  border: 1px solid #e1e1e1;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #ffc107;
+  background-color: #ffffff;
+}
+
+.input::placeholder {
+  color: #999;
+}
+
+.password__container {
+  position: relative;
+}
+
+.password__toggle {
+  top: 50%;
+  right: 12px;
+  border: none;
+  padding: 4px;
+  color: #666;
+  cursor: pointer;
+  font-size: 18px;
+  background: none;
+  position: absolute;
+  transform: translateY(-50%);
+  transition: color 0.3s ease;
+}
+
+.password__toggle:hover {
+  color: #ffc107;
+}
+
+/**======================
+ * FORM OPTIONS STYLES
+ ======================*/
+.form__options {
+  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 24px;
+  justify-content: flex-end;
+}
+
+.checkbox__container {
+  color: #666;
+  display: flex;
+  cursor: pointer;
+  font-size: 14px;
+  align-items: center;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  accent-color: #ffc107;
+}
+
+.checkbox__text {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.forgot__password {
+  font-size: 14px;
+  color: #ffc107;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot__password:hover {
+  color: #e0a800;
+  text-decoration: underline;
+}
+
+/**=====================
+ * SUBMIT BUTTON STYLES
+ =====================*/
+.submit__button {
+  width: 100%;
+  border: none;
+  padding: 16px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 8px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+}
+
+.submit__button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+  background: linear-gradient(135deg, #e0a800 0%, #ffc107 100%);
+}
+
+.submit__button:active {
+  transform: translateY(0);
+}
+
+.disabledButton {
+  opacity: 0.6;
+}
+
+/**========
+ * Footer
+ ========*/
+.footer {
+  padding-top: 20px;
+  text-align: center;
+  border-top: 1px solid #f0f0f0;
+}
+
+.footerText {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.signUpLink {
+  color: #ffc107;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.signUpLink:hover {
+  color: #e0a800;
+  text-decoration: underline;
+}
+
+/**=======================
+ * VISUAL SECTION STYLES
+ =======================*/
+.visual__section {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.visual__content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.visual__content img,
+.visual__content svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/**===================
+ * BREAKPOINT STYLES
+ ===================*/
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .visual__section {
+    display: none;
+  }
+
+  .form__section {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form__section {
+    padding: 16px;
+  }
+
+  .login__card {
+    max-width: 100%;
+    padding: 32px 24px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .logo__placeholder {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 360px) {
+  .login__card {
+    padding: 24px 20px;
+  }
+
+  .input {
+    font-size: 16px;
+    padding: 12px 14px;
+  }
+
+  .submit__button {
+    padding: 14px;
+  }
+}
