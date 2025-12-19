@@ -99,11 +99,11 @@ const CategoriesPageComponent = () => {
       { id, ...updates },
       {
         onSuccess: () => {
-          toast.success(t('categories.updateSuccess'));
+          toast.success(t('categories.success'));
           refetch();
         },
         onError: () => {
-          toast.error(t('categories.updateError'));
+          toast.error(t('modal.errorOccured'));
         },
       }
     );
