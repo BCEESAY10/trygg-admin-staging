@@ -103,7 +103,7 @@ const CategoriesPageComponent = () => {
           refetch();
         },
         onError: () => {
-          toast.error(t('modal.errorOccured'));
+          toast.error(t('modal.errorTitle'));
         },
       }
     );
