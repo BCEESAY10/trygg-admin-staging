@@ -217,6 +217,7 @@
         "basePrice": "Base Price",
         "pricePerKm": "Price Per KM",
         "minimumFare": "Minimum Fare",
+        "updatePrices": "Update Prices",
         "sortOrder": "Sort Order",
         "success": "Success",
         "created": "Category created successfully",

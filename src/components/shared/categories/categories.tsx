@@ -140,7 +140,7 @@ const CategoriesPageComponent = () => {
     { key: 'minimumFare', label: t('categories.minimumFare') },
     {
       key: 'action',
-      label: t('admins.action'),
+      label: t('categories.updatePrices'),
       render: (_, row) => {
         const category = row as unknown as RideCategory;
         return (

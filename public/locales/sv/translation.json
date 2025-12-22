@@ -217,6 +217,7 @@
         "basePrice": "Grundpris",
         "pricePerKm": "Pris per km",
         "minimumFare": "Minimipris",
+        "updatePrices": "Uppdatera priser",
         "sortOrder": "Sorteringsordning",
         "activate": "Aktivera",
         "deactivate": "Inaktivera",
