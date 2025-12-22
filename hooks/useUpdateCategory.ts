@@ -6,7 +6,13 @@ export const useUpdateCategory = () => {
   const queryClient = useQueryClient();
 
   return useMutation({
-    mutationFn: updateCategory,
+    mutationFn: ({
+      id,
+      updates,
+    }: {
+      id: string;
+      updates: { basePrice: number; pricePerKm: number; minimumFare: number };
+    }) => updateCategory(id, updates),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['categories'] });
     },

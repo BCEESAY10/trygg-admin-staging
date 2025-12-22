@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import { useState } from 'react';
 
 import { Tag } from 'lucide-react';
@@ -96,7 +97,7 @@ const CategoriesPageComponent = () => {
     }
   ) => {
     updateCategory(
-      { id, ...updates },
+      { id, updates },
       {
         onSuccess: () => {
           toast.success(t('categories.success'));

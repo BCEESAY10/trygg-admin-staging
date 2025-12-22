@@ -33,9 +33,13 @@ export const fetchRideCategories = async ({
   return data;
 };
 
-export const updateCategory = async ({ id }: { id: string }) => {
+export const updateCategory = async (
+  id: string,
+  payload: { basePrice: number; pricePerKm: number; minimumFare: number }
+) => {
   const { data } = await apiClient.patch(
-    `https://trygg.staging.nga.gm/api/v1/rides/categories/${id}`
+    `https://trygg.staging.nga.gm/api/v1/rides/categories/${id}`,
+    payload
   );
   return data;
 };
